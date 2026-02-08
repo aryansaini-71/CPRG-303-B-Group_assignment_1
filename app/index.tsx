@@ -1,15 +1,25 @@
-import { Text, View } from "react-native";
+import React from 'react';
+import { StyleSheet, View, Text, ScrollView } from 'react-native';
 
-export default function Index() {
+export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View style={styles.screen}>
+      <ScrollView>
+        <Text style={styles.placeholderText}>Project</Text>
+      </ScrollView>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    backgroundColor: '#fff',
+    paddingTop: 50, 
+  },
+  placeholderText: {
+    textAlign: 'center',
+    marginTop: 20,
+    color: '#aaa',
+  },
+});
