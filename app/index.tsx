@@ -1,4 +1,5 @@
-import Header from "@/components/header";
+
+import ProfileScreen from "@/components/profile-screen";
 import React from "react";
 import {
   Alert,
@@ -13,14 +14,12 @@ export default function App() {
   const handleAlertPress = () => {
     Alert.alert("Alert Button pressed");
   };
-
+  
   return (
     <View style={styles.screen}>
-      <Header />
       <ScrollView>
-        <View style={styles.headerBox}>
-          <Text style={styles.textStyle}>[Member 2]</Text>
-        </View>
+        <ProfileScreen />
+        
 
         <View style={styles.bodyBox}>
           <Text style={styles.textStyle}>[Member 3]</Text>
